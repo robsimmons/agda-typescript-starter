@@ -5,11 +5,16 @@
     "lib": ["es6"],
     "allowJs": true,
     "outDir": "build",
-    "rootDir": "src",
+    "baseUrl": ".",
+    "rootDirs": ["src", "agda/build"],
+    "paths": { "*" : [ "agda/build/*" ]},
     "strict": true,
     "esModuleInterop": true,
     "types": ["node", "jest"]
   },
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.spec.ts"]
+  "exclude": ["src/**/*.spec.ts"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  }
 }
