@@ -2,6 +2,7 @@
   "name": "typescript-starter",
   "version": "1.0.0",
   "description": "A basic typescript app starter for newbies in 2022.",
+  "main": "index.js",
   "scripts": {
     "build": "rimraf ./build && tsc",
     "start:dev": "NODE_PATH=agda/build nodemon",
