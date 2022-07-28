@@ -7,7 +7,7 @@
     "outDir": "build",
     "baseUrl": ".",
     "rootDirs": ["src", "agda/build"],
-    "paths": { "*" : [ "agda/build/*" ]},
+    "paths": { "*": ["agda/build/*"] },
     "strict": true,
     "esModuleInterop": true,
     "types": ["node", "jest"]
