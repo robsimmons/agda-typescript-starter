@@ -2,11 +2,12 @@
   "name": "typescript-starter",
   "version": "1.0.0",
   "description": "A basic typescript app starter for newbies in 2022.",
-  "main": "index.js",
+  "main": "build/src/index.js",
+  "type": "module",
   "scripts": {
     "build": "rimraf ./build && tsc",
     "start:dev": "nodemon",
-    "start": "npm run build && node build/index.js",
+    "start": "npm run build && node build/src/index.js",
     "test": "jest",
     "test:dev": "jest --watchAll"
   },
