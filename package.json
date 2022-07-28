@@ -4,10 +4,10 @@
   "description": "A basic typescript app starter for newbies in 2022.",
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "start:dev": "nodemon",
-    "start": "npm run build && node build/src/index.js",
-    "test": "jest",
-    "test:dev": "jest --watchAll"
+    "start:dev": "NODE_PATH=agda/build nodemon",
+    "start": "npm run build && NODE_PATH=agda/build node build/src/index.js",
+    "test": "NODE_PATH=agda/build jest",
+    "test:dev": "NODE_PATH=agda/build jest --watchAll"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +20,6 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^28.0.7",
     "ts-node": "^10.9.1",
-    "tsconfig-paths": "^4.0.0",
     "typescript": "^4.7.4"
   },
   "dependencies": {}

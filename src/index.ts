@@ -1,5 +1,4 @@
-import { Tree, Nat, height } from 'jAgda.Tree';
+import { Tree, height } from 'jAgda.Tree';
 console.log(Tree.leaf);
 console.log(Tree.node(Tree.leaf)(Tree.leaf));
-console.log('Hello world!');
-
+console.log(height(Tree.leaf));
