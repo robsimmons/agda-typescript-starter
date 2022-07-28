@@ -1,5 +1,3 @@
--- 
-
 module Tree where
 
 data Nat : Set where
