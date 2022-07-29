@@ -1,2 +1,4 @@
-// eslint-disable-next-line no-console
-console.log('Hello world!');
+import { Tree, height } from 'jAgda.Tree';
+console.log(Tree.leaf);
+console.log(Tree.node(Tree.leaf)(Tree.leaf));
+console.log(height(Tree.leaf));

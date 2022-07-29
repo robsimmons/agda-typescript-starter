@@ -5,7 +5,9 @@
     "lib": ["es6"],
     "allowJs": true,
     "outDir": "build",
-    "rootDir": "src",
+    "rootDirs": ["src", "agda/build"],
+    "baseUrl": "src",
+    "paths": { "*": ["../agda/build/*"] },
     "strict": true,
     "esModuleInterop": true,
     "types": ["node", "jest"]

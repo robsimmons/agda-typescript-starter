@@ -111,3 +111,6 @@ dist
 
 # Build artifacts
 build
+
+# Agda artifacts
+*.agdai
