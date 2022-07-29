@@ -3,15 +3,13 @@
     "target": "es5",
     "module": "commonjs",
     "lib": ["es6"],
-    "allowJs": true,
     "outDir": "build",
     "rootDirs": ["src", "agda/build"],
     "baseUrl": "src",
-    "paths": { "*": ["../agda/build/*"] },
+    "paths": { "*": ["../agda/build/*", "../agda/types/*"] },
     "strict": true,
-    "esModuleInterop": true,
-    "types": ["node", "jest"]
+    "esModuleInterop": true
   },
   "include": ["src/**/*"],
-  "exclude": ["src/**/*.spec.ts"]
+  "exclude": ["src/**/*.spec.ts", "agda/**/*.js"]
 }
